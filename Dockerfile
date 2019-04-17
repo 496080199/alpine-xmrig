@@ -18,4 +18,6 @@ RUN   apk --no-cache upgrade && \
         git
 USER miner
 WORKDIR    /xmrig
+ENV HTTP_PROXY ""
+ENV HTTPS_PROXY ""
 ENTRYPOINT  ["./xmrig"]
